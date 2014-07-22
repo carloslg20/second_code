@@ -38,7 +38,7 @@ public class MyActivity extends Activity implements View.OnClickListener,
         setContentView(R.layout.activity_my);
         getActionBar().hide();
         final View dragView = findViewById(android.R.id.icon);
-//        image.setOnClickListener(this);
+        dragView.setOnClickListener(this);
         dragView.setTag(VIEW_TAG);
         dragView.setOnLongClickListener(this);
         findViewById(android.R.id.content).setOnDragListener(this);
